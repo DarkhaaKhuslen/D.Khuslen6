@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>khuslen</title>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color:white;
+            }
+            .counter-container{
+                text-align:center;
+            }
+            h1{
+                font-size:3em;
+            }
+            #counter{
+                font-size:4em;
+                font-weight:bold;
+                margin-bottom:20px;
+            }
+            .button-container{
+                display:flex;
+                justify-content:center;
+                gap:10px;
+            }
+            .towchluur{
+                padding:10px;
+                font-size:1em;
+                border-radius:5px;
+                cursor:pointer;
+                color:white;
+            }
+            .towchluur1-decrement{
+                background-color:black;
+            }
+            .towchluur2-reset{
+                background-color:red;
+            }
+            .towchluur3-increment{
+                background-color:burlywood;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="counter-container">
+            <h1>counter</h1>
+            <div id="counter">0</div>
+            <div class="button-container">
+                <button class="towchluur towchluur1-decrement" onclick="decrement()">decrement</button>
+                <button class="towchluur towchluur2-reset" onclick="reset()">reset</button>
+                <button class="towchluur towchluur3-increment" onclick="increment()">increment</button>
+            </div>
+        <script src="app.js"></script>
+    </body>
+</html>
